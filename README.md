@@ -1,23 +1,23 @@
-# Homebrew Tap for cmuxterm
+# Homebrew Tap for cmux
 
-This is the official Homebrew tap for [cmuxterm](https://github.com/manaflow-ai/cmuxterm), a lightweight native macOS terminal with vertical tabs for AI coding agents.
+This is the official Homebrew tap for [cmux](https://github.com/manaflow-ai/cmux), a Ghostty-based macOS terminal with vertical tabs for AI coding agents.
 
 ## Installation
 
 ```bash
-brew tap manaflow-ai/cmuxterm
-brew install --cask cmuxterm
+brew tap manaflow-ai/cmux
+brew install --cask cmux
 ```
 
 ## Updating
 
 ```bash
-brew upgrade --cask cmuxterm
+brew upgrade --cask cmux
 ```
 
 ## Uninstalling
 
 ```bash
-brew uninstall --cask cmuxterm
-brew untap manaflow-ai/cmuxterm
+brew uninstall --cask cmux
+brew untap manaflow-ai/cmux
 ```
