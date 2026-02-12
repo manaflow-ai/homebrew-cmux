@@ -1,11 +1,11 @@
 cask "cmux" do
-  version "1.24.0"
-  sha256 "68df146c685c58a94d649e1ab8610d1cc2f995b3de47d4655b35f0a51061dceb"
+  version "cmux-preview-assets"
+  sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
 
   url "https://github.com/manaflow-ai/cmux/releases/download/v#{version}/cmux-macos.dmg"
   name "cmux"
-  desc "Ghostty-based macOS terminal with vertical tabs for AI coding agents"
-  homepage "https://cmux.sh"
+  desc "Lightweight native macOS terminal with vertical tabs for AI coding agents"
+  homepage "https://github.com/manaflow-ai/cmux"
 
   livecheck do
     url :url
@@ -18,7 +18,7 @@ cask "cmux" do
 
   zap trash: [
     "~/Library/Application Support/cmux",
-    "~/Library/Caches/com.cmuxterm.app",
-    "~/Library/Preferences/com.cmuxterm.app.plist",
+    "~/Library/Caches/cmux",
+    "~/Library/Preferences/ai.manaflow.cmux.plist",
   ]
 end
