@@ -1,6 +1,6 @@
 cask "cmux" do
-  version "0.62.0"
-  sha256 "e973e8396dfbcdb99a6aa561f8a04c12871d7d47d4e5182b33a1bd5ca9f2eb6d"
+  version "0.61.0"
+  sha256 "a113c6a43c18e323dfa91f2e39f19e20811cbac4605b639b99f9e3a9f338a528"
 
   url "https://github.com/manaflow-ai/cmux/releases/download/v#{version}/cmux-macos.dmg"
   name "cmux"
@@ -15,7 +15,6 @@ cask "cmux" do
   depends_on macos: ">= :sonoma"
 
   app "cmux.app"
-  binary "#{appdir}/cmux.app/Contents/Resources/bin/cmux"
 
   zap trash: [
     "~/Library/Application Support/cmux",
