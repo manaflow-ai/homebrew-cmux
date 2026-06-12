@@ -1,18 +1,18 @@
 cask "cmux" do
-  version "0.64.14"
-  sha256 "6afff68abe90dc8a2f947f5ffe9003e517811950fac4038abbf08a1a601e99c4"
+  version "0.64.15"
+  sha256 "b98a0313fc63788e93dfbb0082ae768ecc97557a0a8201df3598ff793264ca4e"
 
   url "https://github.com/manaflow-ai/cmux/releases/download/v#{version}/cmux-macos.dmg"
   name "cmux"
   desc "Lightweight native macOS terminal with vertical tabs for AI coding agents"
-  homepage "https://cmux.com/"
+  homepage "https://cmux.com"
 
   livecheck do
     url :url
     strategy :github_latest
   end
 
-  depends_on macos: :sonoma
+  depends_on macos: ">= :sonoma"
 
   app "cmux.app"
   binary "#{appdir}/cmux.app/Contents/Resources/bin/cmux"
