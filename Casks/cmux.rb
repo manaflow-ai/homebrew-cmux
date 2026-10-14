@@ -1,6 +1,6 @@
 cask "cmux" do
-  version "0.64.25"
-  sha256 "0afb2f8ff9bfef10f03e61ff12e65ce02dbca5c96cb9047118e13483ac5b08ad"
+  version "0.65.1"
+  sha256 "264933be1db770667df5b6cf09045ff48203f99dd96ad5f801ff676f915b5850"
 
   url "https://github.com/manaflow-ai/cmux/releases/download/v#{version}/cmux-macos.dmg"
   name "cmux"
@@ -12,7 +12,7 @@ cask "cmux" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "cmux.app"
   binary "#{appdir}/cmux.app/Contents/Resources/bin/cmux"
